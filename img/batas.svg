@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2766"
+   version="1.1"
+   viewBox="0 0 165.13428 57.999447"
+   height="57.999447mm"
+   width="165.13428mm">
+  <defs
+     id="defs2760">
+    <clipPath
+       id="clipPath22407"
+       clipPathUnits="userSpaceOnUse">
+      <g
+         id="g22411"
+         transform="matrix(1.4582116,0,0,1.3266331,-80.587244,17.79441)"
+         style="fill:url(#linearGradient22415);fill-opacity:1">
+        <path
+           id="path22409"
+           d="m 141.69125,-0.55589112 h 69.29549 V 121.17771 L 86.390618,120.88363 Z"
+           style="opacity:1;fill:url(#linearGradient22413);fill-opacity:1;stroke:none;stroke-width:0.2460811;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.19597988" />
+      </g>
+    </clipPath>
+    <clipPath
+       id="clipPath22407-6"
+       clipPathUnits="userSpaceOnUse">
+      <g
+         id="g22411-6"
+         transform="matrix(1.4582116,0,0,1.3266331,-80.587244,17.79441)"
+         style="fill:url(#linearGradient22415);fill-opacity:1">
+        <path
+           id="path22409-7"
+           d="m 141.69125,-0.55589112 h 69.29549 V 121.17771 L 86.390618,120.88363 Z"
+           style="opacity:1;fill:url(#linearGradient22413);fill-opacity:1;stroke:none;stroke-width:0.2460811;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.19597988" />
+      </g>
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata2763">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-5.7109643,-114.81548)"
+     id="layer1">
+    <rect
+       transform="translate(-39.677593,-4.7747265)"
+       clip-path="url(#clipPath22407-6)"
+       y="119.5902"
+       x="0.26240528"
+       height="57.999447"
+       width="210.26042"
+       id="rect21867-3"
+       style="opacity:1;fill:#5b3983;fill-opacity:1;stroke:none;stroke-width:0.23804288;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.19597988" />
+  </g>
+</svg>

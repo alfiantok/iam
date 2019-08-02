@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ARDEV - Ayo Buat Web Mu!</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<header>
+		
+		<div class="leftHead header ib vt fl">
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/logo.png" width="60px" style="margin: 20px;" alt="Logo">
+				</a>
+			</div>
+			<div class="backFix">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#" id="one">Beranda</a></li>
+					<li><a href="#portofolio" id="two">Portofolio</a></li>
+					<li><a href="#kemampuan" id="three">Kemampuan</a></li>
+					<li><a href="#prestasi" id="four">Prestasi</a></li><span id="showBR" style="display: none;"><br></span>
+					<li><a href="#Plan" id="five">Rencanakan Web Anda</a></li>
+				</ul>
+			</nav>
+			<div class="captionHead">
+				<div class="captionBig">
+					<br>
+					Ayo Buat<span id="rem2"><Br></span> Website<span id="rem2"><Br></span> Anda!
+				</div>
+				<div class="captionSmall">
+					Saya adalah orang yang Berpengalaman<span id="rem"><Br></span> lebih dari 2 tahun dalam desain web <span id="rem"><Br></span>
+					dan pembuatan web
+				</div>
+				<div class="button contcactButton">
+					<a href="#Plan">
+						Buat Rencana Anda
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="rightHead header ib vt fl">
+			<div class="imageWeb">
+				<img src="img/web.png" align="web" width="130%">
+			</div>
+		</div>
+		<div class="cb"></div>
+	</header>
+	<main>
+		<div class="batas">
+			<div class="whatisay batasPart ib vt fl">
+				<div class="me">
+					<img src="img/me.png" alt="fotoku" width="100%">
+				</div>
+				<div class="coverBatas">
+					<img src="img/batas.png" alt="batas">
+				</div>
+				<div class="captionBatas">
+					Hay Nama saya Alfian saya adalah<span id="rem3"><Br></span> seorang Web Designner<span id="rem3"><Br><Br></span>
+					<div class="button conButton">
+						<a href="#">
+							Kontak Saya
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="cb"></div>
+		</div>
+
+		<div class="fitur">
+			<center>
+				<h2>Fitur</h2>
+				<div class="boxFit ib vt">
+					<i class="fa fa-fighter-jet"></i><br>
+					<span>Kecepatan Akses</span>
+					<p>Dengan akses yang cepat pengunjung akan menyukai web kita</p>
+				</div>
+				<div class="boxFit ib vt">
+					<i class="fa fa-heart"></i><br>
+					<span>Keindahan Website</span>
+					<p>Dengan desain yang indah pengunjung akan nyaman berada di web kita</p>
+				</div>
+				<div class="boxFit ib vt">
+					<i class="fa fa-laptop"></i><br>
+					<span>Responsivitas</span>
+					<p>Dengan adanya fitur Responsive pengunjung dapat membuka web di device apapun</p>
+				</div>
+			</center>
+		</div>
+
+		<div class="portofolio" id="portofolio">
+			<center>
+				<h2>Portofolio</h2>
+				<div class="cur">
+					<img src="img/curLeft.png" alt="cur" id="cur1" onclick="prev()">
+					<img src="img/curRight.png" alt="cur" id="cur2" onclick="next()">
+				</div>
+				<div class="sliderPortofolio">
+					<div class="p p1 dn">
+						<img src="img/p00.png" alt="portofolio">
+					</div>
+					<div class="p p2 dn">
+						<img src="img/p0.png" alt="portofolio">
+					</div>
+					<div class="p p3">
+						<img src="img/p1.png" alt="portofolio">
+					</div>
+					<div class="p p4 dn">
+						<img src="img/p2.png" alt="portofolio">
+					</div>
+					<div class="p p5 dn">
+						<img src="img/p3.png" alt="portofolio">
+					</div>
+				</div>
+			</center>
+			<script type="text/javascript">
+					var value = 1;
+					function images(){
+							if (value == -1) {
+							$(".p1").show();
+							$(".p2").hide();
+							$(".p3").hide();
+							$(".p4").hide();
+							$(".p5").hide();
+						}
+						if (value == 0) {
+							$(".p1").hide();
+							$(".p2").show();
+							$(".p3").hide();
+							$(".p4").hide();
+							$(".p5").hide();
+						}
+						if (value == 1) {
+							$(".p1").hide();
+							$(".p2").hide();
+							$(".p3").show();
+							$(".p4").hide();
+							$(".p5").hide();
+						}
+						if (value == 2) {
+							$(".p1").hide();
+							$(".p2").hide();
+							$(".p3").hide();
+							$(".p4").show();
+							$(".p5").hide();
+						}
+						if (value == 3) {
+							$(".p1").hide();
+							$(".p2").hide();
+							$(".p3").hide();
+							$(".p4").hide();
+							$(".p5").show();
+						}
+					}
+					var myVar = setInterval(myTimer, 10000);
+				
+					var value = 1;
+					function myTimer() {
+					    value += 1;
+					    
+					    if (value >= 4) {
+							value = -2;
+					 	}
+					 	images();
+					 	console.log("Tambah Val "+value);
+					}
+
+
+
+					
+
+
+				function next(){
+					value += 1;
+					images();
+					if(value >= 4){
+						value = -2;
+					}
+				}
+				function prev(){
+					value -= 1;
+					images();
+					if(value <= -2){
+						value = 3;
+					}
+				}
+			</script>
+		</div>
+		<div class="skill" id="kemampuan">
+			<center>
+				<br><br>
+				<h2>Kemampuan</h2>
+			</center>
+			<div class="skillSlider skil1 ib vt fl">
+				Inkscape (80%)<br>
+				<div class="slSkill">
+					<div class="isiSkill1"></div>
+				</div>
+			</div>
+			<div class="skillSlider skil2 ib vt fl">
+				Photoshop (70%)<br>
+				<div class="slSkill">
+					<div class="isiSkill2"></div>
+				</div>
+			</div>
+			<div class="skillSlider skil2 ib vt fl">
+				Corel Draw (75%)<br>
+				<div class="slSkill">
+					<div class="isiSkill3"></div>
+				</div>
+			</div>
+			<div class="skillSlider skil2 ib vt fl">
+				HTML (95%)<br>
+				<div class="slSkill">
+					<div class="isiSkill4"></div>
+				</div>
+			</div>
+			<div class="skillSlider skil2 ib vt fl">
+				CSS (92%)<br>
+				<div class="slSkill">
+					<div class="isiSkill5"></div>
+				</div>
+			</div>
+			<div class="skillSlider skil2 ib vt fl">
+				Javascript (40%)<br>
+				<div class="slSkill">
+					<div class="isiSkill6"></div>
+				</div>
+			</div>
+			<div class="skillSlider skil2 ib vt fl">
+				PHP (40%)<br>
+				<div class="slSkill">
+					<div class="isiSkill7"></div>
+				</div>
+			</div>
+			<div class="skillSlider skil2 ib vt fl">
+				Mysql (35%)<br>
+				<div class="slSkill">
+					<div class="isiSkill8"></div>
+				</div>
+			</div>
+			<div class="cb"></div>
+			<br><br><bR><br><br><bR>
+		</div>
+		<div class="prestasi" id="prestasi">
+			<Br><br><br>
+			<center><h2>Prestasi Saya</h2></center>
+			<br><br><br>
+			<div class="prestasiL ps ib vt fl">
+				<span>Daftar Prestasi </span><br><br>
+				Juara 1 Web Design Univ. Sanata Dharma ITDAYS DIY (2017) <br><br>
+				Juara 1 Web Design Poltek. Harber INVOFEST Tegal (2017)<br> <br>
+				Juara 1 Web Design Univ. BAKRIE Compiler Jakarta (2017)<br><br> 
+				Juara 1 Web Design Univ. RESPATI DIY (2018) <br><br>
+				Juara 1 Web Design LKS DIY 2018<br><br>
+				Juara 2 Web Design niv. Sanata Dharma ITDAYS DIY (2018)<br><br>
+			</div>
+			<div class="prestasiR ps ib vt fl">
+				<center><a href="img/prestasi.png"><img src="img/prestasi.png" alt="prestasi" width="250px"></a></center>
+			</div>
+			<div class="cb"></div>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+		
+		<div class="formMakeWeb">
+			<div class="boxisay">
+				<div class="captionBoxiSay">
+					<div class="thecapt">
+						Membuat website sudah menjadi <br>
+						bagian dari hidup Saya <br>
+						<b>- Alfian -</b>
+					</div>
+					<div class="me2">
+						<img src="img/me2.png" width="260px;" alt="Saya">
+					</div>
+				</div>
+				
+			</div>
+			<div class="formWeb" id="Plan">
+				<center>
+					<h2>Ayo Rencanakan Web Anda Sekarang!</h2>
+					<form method="post">
+						<input type="text" name="" placeholder="Nama Anda" required>
+						<input type="email" name="" placeholder="Email Anda" required><br>
+						<input type="number" name="" placeholder="Nomor Telepon Aktif Anda" required><br>
+						<textarea placeholder="Jelaskan Kriteria Website Sesuai Keinginan Anda"></textarea><br>
+						<button type="submit">Kirim</button>
+					</form>
+					<div class="atau" id="kontak">
+						- Atau Kontak Saya Langsung -
+					</div>
+					<div class="kontakWa">
+						<a href="https://wa.me/6895363158726" target="_blank">Whats App : 0895 - 3631 - 58726</a><br><br>
+						<span>*Klik untuk chat</span>
+					</div>
+				</center>
+			</div>
+			<br><br><br><br><br>
+		</div>
+	</main>
+	<footer>
+		<center>
+			<div>
+				<br>
+				My Dream Studio : <a href="img/logo.png"><img src="img/logo.png" width="50px" alt="logo"></a> ARDEV Studio<br><br>
+				&copy;2018 ARDEV Studio - ALFIAN  - SMKN 3 YOGYAKARTA - Fasta Biqul Khoirot
+			</div>
+		</center>
+	</footer>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			var offset1 = $(".skill").offset().top - 200;
+			var top = $("html").scrollTop();
+			if (top == 0) {
+				$(".backFix").fadeOut();
+			}
+			if(top >= 100){
+				$(".backFix").fadeIn();
+			}
+
+			if (top <= offset1) {
+				$(".isiSkill1").css({"width":"0%"});
+				$(".isiSkill2").css({"width":"0%"});
+				$(".isiSkill3").css({"width":"0%"});
+				$(".isiSkill4").css({"width":"0%"});
+				$(".isiSkill5").css({"width":"0%"});
+				$(".isiSkill6").css({"width":"0%"});
+				$(".isiSkill7").css({"width":"0%"});
+				$(".isiSkill8").css({"width":"0%"});
+			}
+
+			if (top >= offset1) {
+				$(".isiSkill1").css({"width":"80%","transition":"all 1s cubic-bezier(.47,1.27,.69,1.51)"});
+				$(".isiSkill2").css({"width":"70%","transition":"all 1s cubic-bezier(.47,1.27,.69,1.51)"});
+				$(".isiSkill3").css({"width":"75%","transition":"all 1s cubic-bezier(.47,1.27,.69,1.51)"});
+				$(".isiSkill4").css({"width":"95%","transition":"all 1s cubic-bezier(.47,1.27,.69,1.51)"});
+				$(".isiSkill5").css({"width":"92%","transition":"all 1s cubic-bezier(.47,1.27,.69,1.51)"});
+				$(".isiSkill6").css({"width":"40%","transition":"all 1s cubic-bezier(.47,1.27,.69,1.51)"});
+				$(".isiSkill7").css({"width":"40%","transition":"all 1s cubic-bezier(.47,1.27,.69,1.51)"});
+				$(".isiSkill8").css({"width":"35%","transition":"all 1s cubic-bezier(.47,1.27,.69,1.51)"});
+			}
+			var path = $("#Plan").offset().top - 200;
+			var path2 = $("#kontak").offset().top -200;
+			var path3 = $("#prestasi").offset().top -200;
+			var path4 = $("#kemampuan").offset().top -200;
+			var path5 = $("#portofolio").offset().top - 200;
+
+			var theTop = $("html").scrollTop();
+			console.log("path " + path5);
+			console.log("top " + theTop)
+			if (theTop <= path5) {
+				$("#one").addClass("active");
+				$("#two").removeClass("active");
+				$("#three").removeClass("active");
+				$("#four").removeClass("active");
+				$("#five").removeClass("active");
+			}
+			if(theTop >= path5){
+				$("#one").removeClass("active");
+				$("#two").addClass("active");
+				$("#three").removeClass("active");
+				$("#four").removeClass("active");
+				$("#five").removeClass("active");
+			}
+			if(theTop >= path4){
+				$("#one").removeClass("active");
+				$("#two").removeClass("active");
+				$("#three").addClass("active");
+				$("#four").removeClass("active");
+				$("#five").removeClass("active");
+			}
+			if(theTop >= path3){
+				$("#one").removeClass("active");
+				$("#two").removeClass("active");
+				$("#three").removeClass("active");
+				$("#four").addClass("active");
+				$("#five").removeClass("active");
+			}
+			if(theTop >= path2){
+				$("#one").removeClass("active");
+				$("#two").removeClass("active");
+				$("#three").removeClass("active");
+				$("#four").removeClass("active");
+				$("#five").addClass("active");
+			}
+			if(theTop >= path){
+				$("#one").removeClass("active");
+				$("#two").removeClass("active");
+				$("#three").removeClass("active");
+				$("#four").removeClass("active");
+				$("#five").addClass("active");
+			}
+			
+
+		})
+
+		$(".contcactButton a,#five").click(function(){
+			var path = $("#Plan").offset().top - 100;
+			$("html").animate({scrollTop:path},1200);
+
+		})
+		$(".conButton a").click(function(){
+			var path2 = $("#kontak").offset().top;
+			$("html").animate({scrollTop:path2},1200);
+			
+		})
+		$("#four").click(function(){
+			var path3 = $("#prestasi").offset().top;
+			$("html").animate({scrollTop:path3},1200);
+
+		})
+		$("#three").click(function(){
+			var path3 = $("#kemampuan").offset().top;
+			$("html").animate({scrollTop:path3},1200);
+
+		})
+		$("#two").click(function(){
+			var path3 = $("#portofolio").offset().top -100;
+			$("html").animate({scrollTop:path3},1200);
+
+		})
+		$("#one").click(function(){
+			$("html").animate({scrollTop:0},1200);
+
+		})
+	</script>
+</body>
+</html>
